@@ -1,0 +1,59 @@
+:root{
+    --main-yellow: #ffd877;
+    --light-yellow: #fdfbf1;
+    --main-green: #107777;
+}
+
+body{
+    margin: 0 auto;
+}
+
+#header {
+    text-align: center;
+}
+
+.yellow-bar{
+    background-color: var(--light-yellow);
+    border-top: solid 1px var(--main-yellow);
+    padding-bottom: 10px;
+}
+
+.yellow-bar b{
+    text-transform: uppercase;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#title {
+    text-align: center;
+}
+
+.paragrafo {
+    text-align: center;
+}
+
+#cit {
+    text-align: center;
+}
+
+#vertical-bar {
+    border-left: solid 1px var(--main-yellow)
+}
+.featured {     
+    color: chocolate;
+}
+
+.green-bar{
+    border-top: solid 1px var(--main-green);
+}
+
+.sezione {
+    text-align: center;
+}
+
+.footer {
+    color: var(--main-green);
+}
