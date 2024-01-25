@@ -120,22 +120,45 @@ td {
 }
 
 iframe {
+  display: block;
+  margin: 0 auto;
+  border-radius: 25px;
 }
 
 .sottotitoli {
+  background-color: lightgray;
+  text-align: left;
+  padding: 0.4em 1em;
+  margin-top: 1.5em;
 }
-
 .novita {
+  text-align: center;
+  font-weight: 600;
 }
-
 .data {
+  text-align: right;
 }
-
 button {
+  background-color: rgb(57, 119, 211);
+  color: white;
+  border: none;
+  padding: 0.3em;
 }
-
 input {
+  border: none;
+  border-bottom: 1px dashed gray;
+  padding: 0.3em;
 }
-
 footer {
+  -webkit-box-shadow: 3px 5px 10px 1px rgba(94, 94, 94, 0.56);
+  box-shadow: 3px 5px 10px 1px rgba(94, 94, 94, 0.5);
+  margin-top: 1em;
+  color: white;
+  background: rgb(67, 111, 133);
+  background: linear-gradient(
+    211deg,
+    rgba(67, 111, 133, 1) 0%,
+    rgba(29, 69, 85, 1) 100%
+  );
+  padding: 1em;
 }
