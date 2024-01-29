@@ -69,12 +69,12 @@ console.log (insieme)
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
 
-/*{
+/* ------  {
   const mioNome = 'Federico';
   console.log(mioNome);
   
   mioNome = 'Canale';
-}*/
+}  --------*/
 
 
 
