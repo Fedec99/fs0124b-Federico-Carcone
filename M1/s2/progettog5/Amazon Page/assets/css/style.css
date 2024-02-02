@@ -1,0 +1,133 @@
+/* risoluzione del portatile 1200px*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #e9edee;
+}
+
+.topLogo, .bottomLogo {
+    background-color: #222f3f;
+}
+
+header, footer {
+    background-color: #364759;
+}
+
+.topLogo {
+    text-align: left;
+    margin: auto;
+}
+.topLogo img {
+    padding-left: 2em;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+header {
+    text-align: left;
+}
+header ul {
+    padding: 0.5em;
+}
+header li {
+    margin-left: 1em;
+    display: inline;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.giftCards {
+    background-color: #f56600;
+    margin: 1.2em;
+}
+.giftCards p {
+    padding: 0.5em;
+}
+.giftCards a {
+    text-decoration: none;
+    color: white;
+}
+
+#title {
+    background-image: url(../images/bg-image.png);
+    background-position: center top;
+    background-size: contain;
+    margin: 0 1.2em;
+}
+#title h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    padding: 1.5em 2em 0;
+}
+#title p {
+    padding: 1em 0 1.8em;
+    color: white;
+    font-weight: 600;
+}
+
+#perfect {
+    background-color: white;
+    text-align: left;
+    margin: 1.8em;
+    padding-bottom: 1em;
+}
+#perfect p {
+    padding: 1em;
+    font-weight: 500;
+}
+#perfect a, #vr a, #audio a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #3b8189;
+    font-weight: 900;
+    margin-left: 0.8em;
+}
+#perfect picture {
+    margin: 1em 1em 1em
+}
+#perfect img {
+    display: inline-block;
+    width: 100%;
+    min-height: 350px;
+    max-height: 350px;
+    object-fit: cover;
+    object-position: bottom;
+    max-width: 250px;
+    border-radius: 2em;
+    box-shadow: 6px 6px 6px #D7D7D9;
+}
+
+#vr {
+    margin: 0 1.2em 1.2em;
+}
+#vr img, #audio img {
+    min-height: 350px;
+    max-width: 1144.63px;
+}
+
+#audio {
+    margin: 0 1.2em 1.2em;
+}
+
+footer p {
+    padding: 0.5em;
+}
+footer a {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.bottomLogo img {
+    max-width: 120px;
+    max-height: 70px;
+    padding: 2.5em 0 3em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
