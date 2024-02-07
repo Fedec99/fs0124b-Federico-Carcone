@@ -23,6 +23,7 @@ function addTask() {
     taskList.appendChild(li);
     taskInput.value = '';
     }
+    
     document.getElementById('taskInput').addEventListener('keypress', function(event) {
         if (event.key === 'Enter') {
             addTask();
