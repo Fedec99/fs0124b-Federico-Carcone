@@ -313,7 +313,14 @@ const searchAndDivide = (title, movies) => {
 /* ESERCIZIO 19
 Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
-
+function removeIndex(index, movies) {
+  if (index < 0 || index >= movies.length) {
+      console.log("Indice non valido.");
+      return movies;
+  }
+  const updatedMovies = movies.filter((_, i) => i !== index);
+  return updatedMovies;
+}
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
@@ -337,7 +344,7 @@ Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto 
 const printTdText = () => {
   const tdElements = document.querySelectorAll("td");
   tdElements.forEach(td => {
-      console.log(td.textContent);
+    console.log(td.textContent);
   });
 }
 
@@ -345,10 +352,10 @@ const printTdText = () => {
 Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
 const addRedBackgroundToLinks = () => {
-    const links = document.querySelectorAll("a");
-    links.forEach(link => {
-        link.style.backgroundColor = "red";
-    });
+  const links = document.querySelectorAll("a");
+  links.forEach(link => {
+    link.style.backgroundColor = "red";
+  });
 }
 addRedBackgroundToLinks();
 
@@ -376,7 +383,7 @@ Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 const addClassToRows = () => {
   const rows = document.querySelectorAll("tr");
   rows.forEach(row => {
-      row.classList.add("test");
+    row.classList.add("test");
   });
 }
 addClassToRows();
@@ -575,5 +582,3 @@ console.log(onlyInLastMillennium(movies))
 console.log(sumAllTheYears(movies));
 console.log(searchByTitle("Avengers", movies));
 console.log(searchAndDivide("Lord", movies));
-
-
