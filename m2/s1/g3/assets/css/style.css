@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Vazirmatn', sans-serif;
+    color:#612308;
+    font-size:1em;
+    font-weight: 300;
+}
+h1{
+    text-align: center;
+    line-height: 1em;
+    margin: 0 auto;
+    width: 200px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+h2{
+    text-align: center;
+    margin-bottom:0.3em;
+}
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width:900px) {
+    #container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+}
+
+/*Navbar*/
+#navbar{
+    position: sticky;
+    top: 0px;
+    width: 320px;
+}
+
+nav ul{
+    background-color:#fbf7e3;
+    border-radius: 45px;
+    border-color: transparent;
+    display:flex;
+    list-style-type: none;
+    padding: 1em 0 1em 0;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 0.7em;
+    margin: 0;
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3DF85;
+    border-radius: 90px;
+    border-color: transparent;
+    margin: 5px 1px;
+}
+
+
+#SHOP b{
+    margin-left: 1em;
+}
+
+li{
+    order:2;
+    cursor: pointer;
+    height: 42px;
+    width: 113px;
+}
+
+#SHOP{  
+      order:1;
+    height: 66px;
+    width: 88%;
+}
+
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+@media screen and (min-width:636px){
+    #navbar{
+            width: 100%;
+            top: 0px;
+    }
+    #SHOP{  
+        order:2;
+        height: 71px;
+        width: 138px;
+        font-size: 1.5em;
+  }
+  h1,h2{
+    text-align: left;
+    width:100%;
+    margin-left: 1em;
+  }
+#FC-content h2{
+    margin-left:0;
+}
+
+}
+
+@media screen and (min-width:900px) {
+    #navbar{
+        position: sticky;
+        top: -50px;
+        width: 137px;
+        height:100vh;
+    }
+    nav{
+        position: sticky;
+    top: 0;
+    height: 95vh;
+    }
+    nav ul{
+        height:98%;
+        padding-top: 3em;
+    }
+    li{
+        order: 2;
+        height: 100px;
+        width: 170px;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    #SHOP{
+        order: 1;
+        height: 100px;
+        width: 170px;
+    }
+    #card-container div:nth-child(4), #card-container div:nth-child(5),#card-container div:nth-child(6){
+        display: none;
+    }
+}
+/*Product card*/
+
+#product-card{
+    border:1px solid black;
+    display:flex;
+    flex-direction: column;
+    width:300px;
+    border-radius: 90px;
+    border-color: transparent;
+    margin: 0.5em;
+}
+
+#product-card img{
+    width:100%;
+    border-radius: 90px 90px 0 0;
+    height:265px;
+}
+
+#card-content{
+    border-radius: 0 0 90px 90px;
+    background-color:#fbf7e3;
+    display: flex;
+    flex-direction: column;
+    height:135px;
+    align-items: center;
+}
+
+#card-cont1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+button{
+    background-color: #F3DF85;
+    width: 56%;
+    height: 30%;
+    border-radius: 90px;
+    border-color: transparent;
+    font-family: 'Vazirmatn', sans-serif;
+    color:#612308;
+}
+
+#card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*Flexible-card*/
+#flexible-card{
+    display: flex;
+    flex-direction: column;
+    background-color:#fbf7e3;
+    border: 2px solid;
+    width: 83vw;
+    border-radius: 18px;
+    border-color: transparent;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+#flexible-card img{
+    width:100%;
+
+}
+#FC-img{
+        order:2;
+        width: auto;
+}
+
+#FC-content{
+    order:1;
+}
+
+#FC-content h2{
+    text-align: left;
+}
