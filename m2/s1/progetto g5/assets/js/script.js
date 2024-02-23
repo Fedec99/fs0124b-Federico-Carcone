@@ -1,6 +1,6 @@
 //  colore nav e bottone 
 
-const change = 400;
+const change = 470;
 const startedButtonChange = document.getElementById("startedButton");
 const navChanges = document.getElementById("header");
 window.addEventListener("scroll", () => {
