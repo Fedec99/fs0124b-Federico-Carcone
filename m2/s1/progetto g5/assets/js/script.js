@@ -19,9 +19,9 @@ window.addEventListener("scroll", () => {
 
 // animazione svg M
 
-let m = document.querySelectorAll("g[stroke-linecap='butt']");
+const m = document.querySelectorAll("g[stroke-linecap='butt']");
 setInterval(() => {
-  let random = Math.round(Math.random() * (m.length - 1));
+  const random = Math.round(Math.random() * (m.length - 1));
   m[random].classList.toggle("invisible");
 }, 10);
 
