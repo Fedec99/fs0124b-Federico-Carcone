@@ -1,0 +1,26 @@
+@import "animazioni";
+@import "colori";
+@import "font";
+@import "spaziature";
+@import "mixins";
+@import "img";
+@import "bottoni";
+
+@media screen and (min-width:992px) {
+    header {
+        div{
+            ul{
+                display: flex;
+            }
+        }
+    }
+    main {
+        div{
+            div{
+                h1{
+                   margin: 20% 0 0 0; 
+                }
+            }
+        }
+    }
+}
