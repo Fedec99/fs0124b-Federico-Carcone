@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+header nav img {
+  width: 150px;
+}
+header nav p {
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  right: 185px;
+  cursor: pointer;
+}
+header nav i {
+  color: white;
+  font-size: 1.7em;
+  cursor: pointer;
+}
+
+.navAvatar {
+  width: 50px;
+  border-radius: 5px;
+}
+
+.linkNavAvatar {
+  position: absolute;
+  top: 15px;
+  right: 65px;
+}
+
+.bi-search {
+  position: absolute;
+  top: 23px;
+  right: 235px;
+}
+
+.bi-bell-fill {
+  position: absolute;
+  top: 23px;
+  right: 135px;
+}
+
+.bi-search, header p {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .linkNavAvatar {
+    right: 15px;
+  }
+  .bi-bell-fill {
+    right: 85px;
+  }
+  header nav p {
+    right: 135px;
+  }
+  .bi-search {
+    right: 195px;
+  }
+}
+@media screen and (min-width: 450px) {
+  header .bi-search {
+    display: block;
+  }
+  header p {
+    display: block;
+  }
+}
+.mainTop {
+  display: flex;
+  align-items: center;
+  margin: 0 2vw;
+}
+
+.btn {
+  margin: 5px 0;
+}
+
+.dropdown-menu {
+  background-color: black;
+  --bs-dropdown-link-hover-bg: #575757;
+  --bs-dropdown-link-active-bg: #565e69;
+}
+
+.btnDiv {
+  margin: 0 0 0 auto;
+  text-align: right;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0 2vw 0 0;
+}
+
+.caroselli {
+  margin: 4vh 2vw;
+}
+.caroselli h2 {
+  opacity: 0.9;
+  font-size: 1.3em;
+  margin: 2vh 0;
+}
+
+.carosello {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 0 0 5vh 0;
+}
+.carosello img {
+  width: 100%;
+  margin: 1vh 0;
+  transition: box-shadow 0.2s ease;
+}
+.carosello img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 15px rgb(109, 109, 109);
+}
+
+.imgCarousel {
+  width: 15%;
+  height: auto;
+}
+
+@media screen and (min-width: 576px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  .caroselli h2 {
+    font-size: 2em;
+  }
+  .carosello img {
+    width: 47%;
+    margin: 1vh 1vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carosello img {
+    width: 31%;
+    margin: 1vh 1vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carosello img {
+    width: 18.9%;
+    margin: 1vh 0.5vw;
+  }
+}
+footer {
+  margin: 10vh 5vw 0 5vw;
+}
+footer div i {
+  font-size: 1.5em;
+  opacity: 0.4;
+  margin: 0 2vw 0 0;
+  transition: opacity 0.2s ease;
+}
+footer div i:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.4;
+  font-size: 0.7em;
+  font-weight: 300;
+  transition: opacity 0.2s ease;
+}
+footer a:hover {
+  opacity: 0.8;
+}
+footer address {
+  color: white;
+  opacity: 0.4;
+  font-size: 0.7em;
+  font-weight: 300;
+}
+
+.footerIcone {
+  margin: 0 0 3vh 0;
+}
+
+.footerBtn {
+  margin: 3vh 0;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 0.8em;
+  font-weight: 300;
+  opacity: 0.4;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+.footerBtn:hover {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    margin: 10vh 10vw 0 10vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer {
+    margin: 10vh 20vw 0 20vw;
+  }
+}
+body {
+  background-color: #141414;
+  font-family: "Inter", sans-serif;
+}
+
+.bottoneDropdown {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  padding: 5px 30px;
+  transition: background-color 0.5s ease;
+}
+
+.bottoneDropdown:hover {
+  background-color: rgb(53, 53, 53);
+}/*# sourceMappingURL=main.css.map */
