@@ -1,9 +1,10 @@
 <div class="container-fluid">
   <div class="row">
       <div class="col-6">
+        <img src="{{brandLogo}}">
       </div>
       <div class="col-6 p-5 bg-body-secondary text-dark rounded">
-          <h1>Le nostre auto {{brand}}</h1>
+          <h1>Le {{brand}} Con Uno Style Inline</h1>
       </div>
   </div>
   <div class="row mt-5">
@@ -11,7 +12,7 @@
           <div class="card" style="width: 100%;" [ngClass]="{
               'bg-success': auto.available,
               'bg-danger': !auto.available
-          }">>
+          }">
               <div class="card-body">
                 <img src="{{auto.modelImage}}" class="card-img-top" alt="Car">
                   <h5 class="card-title h2">{{auto.brand}} {{auto.model}}

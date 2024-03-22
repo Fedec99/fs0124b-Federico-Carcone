@@ -1,54 +1,54 @@
 [
     {
         "brand": "Fiat",
-        "brandLogo": "https://picsum.photos/100/100?random=7",
+        "brandLogo": "https://stellantis3.dam-broadcast.com/medias/domain12808/media102550/765271-8dyab6fsa1-whr.jpg",
         "model": "500L",
-        "modelImage": "https://picsum.photos/200/300?random=1",
+        "modelImage": "https://cdn.motor1.com/images/mgl/7WB6W/s1/copertina-fiat-500l-restyling-la-familiare-e-piu-cross-e-tecnologica.jpg",
         "year": 2015,
         "price": 7500,
         "available": false
     },
     {
         "brand": "Fiat",
-        "brandLogo": "https://picsum.photos/100/100?random=7",
+        "brandLogo": "https://stellantis3.dam-broadcast.com/medias/domain12808/media102550/765271-8dyab6fsa1-whr.jpg",
         "model": "500 Abarth",
-        "modelImage": "https://picsum.photos/200/300?random=2",
+        "modelImage": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Fiat_500_Abarth_front.JPG",
         "year": 2010,
         "price": 3500,
         "available": true
     },
     {
         "brand": "Ford",
-        "brandLogo": "https://picsum.photos/100/100?random=8",
+        "brandLogo": "https://logos-world.net/wp-content/uploads/2021/03/Ford-Logo.png",
         "model": "Taurus",
-        "modelImage": "https://picsum.photos/200/300?random=3",
+        "modelImage": "https://www.autoscout24.it/cms-content-assets/y6qAlpEqI7OVI6WkbFMZq-d21f45bc6a1f739a97443ee660f68446-ford-taurus-front-1100.jpeg",
         "year": 2009,
         "price": 5200,
         "available": false
     },
     {
         "brand": "Ford",
-        "brandLogo": "https://picsum.photos/100/100?random=8",
+        "brandLogo": "https://logos-world.net/wp-content/uploads/2021/03/Ford-Logo.png",
         "model": "Focus",
-        "modelImage": "https://picsum.photos/200/300?random=4",
+        "modelImage": "https://cdn.motor1.com/images/mgl/0Bq8p/s3/ford-focus-st-vs-ford-focus-titanium.jpg",
         "year": 2014,
         "price": 9700,
         "available": true
     },
     {
         "brand": "Audi",
-        "brandLogo": "https://picsum.photos/100/100?random=9",
+        "brandLogo": "https://static.vecteezy.com/system/resources/previews/020/498/684/original/audi-brand-symbol-logo-with-name-red-design-german-cars-automobile-illustration-free-vector.jpg",
         "model": "A3",
-        "modelImage": "https://picsum.photos/200/300?random=5",
+        "modelImage": "https://cdn.auto.it/img/960/540/2020/03/03/113915394-045c1ca7-baab-4e45-8d79-a20b7656a921.jpg",
         "year": 2012,
         "price": 4300,
         "available": true
     },
     {
         "brand": "Audi",
-        "brandLogo": "https://picsum.photos/100/100?random=9",
+        "brandLogo": "https://static.vecteezy.com/system/resources/previews/020/498/684/original/audi-brand-symbol-logo-with-name-red-design-german-cars-automobile-illustration-free-vector.jpg",
         "model": "Q7",
-        "modelImage": "https://picsum.photos/200/300?random=6",
+        "modelImage": "https://images.ctfassets.net/uaddx06iwzdz/3YDJAFeQBSHhbfFB49xpKo/8609615fb28076bdaf099e879c4a83f5/audi-q7-side.jpg",
         "year": 2020,
         "price": 41700,
         "available": false
