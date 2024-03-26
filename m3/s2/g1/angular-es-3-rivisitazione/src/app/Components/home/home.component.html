@@ -1,0 +1,12 @@
+<div class="d-flex justify-content-evenly">
+  <a class="btn btn-primary p-3" [routerLink]="['/post-attivi']">Post Attivi</a>
+  <a class="btn btn-primary p-3" [routerLink]="['/post-inattivi']">Post Inattivi</a>
+</div>
+
+<div *ngFor="let item of postArr">
+  {{ item.title }}
+</div>
+
+<div *ngFor="let item of postArr">
+  {{ item.title }}
+</div>
