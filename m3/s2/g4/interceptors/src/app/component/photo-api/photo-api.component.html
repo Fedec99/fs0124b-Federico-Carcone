@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let photo of photos">
+      <div class="card mb-4">
+        <img class="card-img-top" [src]="photo.thumbnailUrl" alt="{{ photo.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ photo.title }}</h5>
+          <button class="btn btn-primary" (click)="likePhoto(photo)">Like</button>
+          <button class="btn btn-danger" (click)="deletePhoto(photo)">Delete</button>
+          <span>{{ photo.likes }} Likes</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="total-likes">Total Likes: {{ totalLikes }}</div>
+    </div>
+  </div>
+</div>
