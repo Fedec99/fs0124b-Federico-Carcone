@@ -24,7 +24,7 @@ export class HomeComponent {
   constructor(private todoSvc: TodoService, private userSvc: UsersService) {}
 
   ngOnInit() {
-    this.todoSvc.$toDo.subscribe(todo => {
+    this.todoSvc.$todos.subscribe(todo => {
       this.todoArr = todo;
     });
 

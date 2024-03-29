@@ -3,11 +3,12 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { iTodo } from '../model/todo';
 import { iUser } from '../model/user';
 import { iFusion } from '../model/fusion';
+
 @Injectable({
   providedIn: 'root'
 })
 export class TodoService {
-  private Todo: iTodo[] = [
+  private todos: iTodo[] = [
     {
       id:1,
       todo:"Do something nice for someone I care about",
@@ -910,8 +911,18 @@ export class TodoService {
     }
   ];
 
-  private toDoSubject = new BehaviorSubject<iTodo[]>(this.Todo);
-  $toDo: Observable<iTodo[]> = this.toDoSubject.asObservable();
+  private todoSubject = new BehaviorSubject<iTodo[]>(this.todos);
+  $todos: Observable<iTodo[]> = this.todoSubject.asObservable();
+
+  constructor() { }
+
+  getCompletedTodos(): iTodo[] {
+    return this.todos.filter(todo => todo.completed);
+  }
+
+  getUserTodos(userId: number): iTodo[] {
+    return this.todos.filter(todo => todo.userId === userId);
+  }
 
   combinedObject(todoArr: iTodo[], userArr: iUser[]): iFusion {
     return todoArr.reduce((acc: iFusion, curr) => {
