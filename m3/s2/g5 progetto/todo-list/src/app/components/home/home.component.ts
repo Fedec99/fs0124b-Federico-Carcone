@@ -9,6 +9,7 @@ import { iTodo } from '../../model/itodo';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
 export class HomepageComponent implements OnInit {
 
   todos: iTodo[] = [];

@@ -9,6 +9,7 @@ import { iTodo } from '../../model/itodo';
   templateUrl: './complete.component.html',
   styleUrls: ['./complete.component.scss']
 })
+
 export class CompletedComponent implements OnInit {
   completedTodos: iTodo[] = [];
   users: iUser[] = [];
