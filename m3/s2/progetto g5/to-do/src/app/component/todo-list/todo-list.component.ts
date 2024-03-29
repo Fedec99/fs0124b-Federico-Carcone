@@ -1,61 +1,41 @@
-import { Component, OnInit } from '@angular/core';
-import { TodoService } from '../../service/todo.service';
-import { UserService } from '../../service/user.service';
-import { iTodo } from '../../model/todo';
+import { TodoService } from './../../service/todo.service';
+import { iFusion } from '../../model/fusion';
 import { iUser } from '../../model/user';
+import { UsersService } from '../../service/user.service';
+import { Component } from '@angular/core';
+import { iTodo } from './../../model/todo';
+
+interface iSingleObject extends iTodo, iUser{
+}
 
 @Component({
-  selector: 'app-todo-list',
+  selector: 'app-todo',
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.scss']
 })
-export class TodoListComponent implements OnInit {
-  todos: iTodo[] = [];
-  users: iUser[] = [];
-  authorFilter: string = '';
-  filteredTodos!: iTodo[];
-getUser: any;
+export class HomeComponent {
 
-  constructor(private todoService: TodoService, private userService: UserService) { }
+  todoArr: iTodo[] = [];
 
-  ngOnInit(): void {
-    this.loadTodos();
-    this.loadUsers();
-  }
+  usersArr: iUser[] = [];
 
-  loadTodos(): void {
-    this.todoService.getTodos().subscribe(todos => {
-      this.todos = todos;
-      this.applyFilter();
+  todoUserArr: iSingleObject[] = [];
+
+  constructor(private todoSvc: TodoService, private userSvc: UsersService) {}
+
+  ngOnInit() {
+    this.todoSvc.$toDo.subscribe(todo => {
+      this.todoArr = todo;
     });
-  }
 
-
-  loadUsers(): void {
-    this.userService.getUsers().subscribe(users => {
-      this.users = users;
+    this.userSvc.$users.subscribe(users => {
+      this.usersArr = users;
     });
+
+    const oggettiNuovi = this.todoSvc.combinedObject(this.todoArr, this.usersArr);
+    for (const key in oggettiNuovi) {
+      let oggetto = oggettiNuovi[key];
+      this.todoUserArr.push(oggetto);
+    }
   }
-
-  applyFilter(): void {
-    this.filteredTodos = this.todos.filter(todo => {
-      const user: iUser | undefined = this.users.find(user => user.id === todo.userId);
-      if (user && 'name' in user) {
-        return (user as iUser).firstName.toLowerCase().includes(this.authorFilter.toLowerCase());
-      }
-      return false;
-    });
-  }
-
-
-  updateTodoStatus(todo: iTodo): void {
-    this.todoService.updateTodoStatus(todo.id, todo.completed).subscribe(updatedTodo => {
-      const index = this.todos.findIndex(t => t.id === updatedTodo.id);
-      if (index !== -1) {
-        this.todos[index] = updatedTodo;
-      }
-    });
-  }
-  }
-
-
+}

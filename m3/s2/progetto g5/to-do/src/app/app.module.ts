@@ -1,24 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoListComponent } from './component/todo-list/todo-list.component';
-import { CompletedTodoListComponent } from './component/completed-todo-list/completed-todo-list.component';
+import { NavbarComponent } from './home/navbar/navbar.component';
+import { FooterComponent } from './home/footer/footer.component';
+import { IncompleteTodoListComponent } from './component/incomplete-todo-list/incomplete-todo-list.component';
 import { UserListComponent } from './component/user-list/user-list.component';
+import { HomeComponent } from './component/todo-list/todo-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoListComponent,
-    CompletedTodoListComponent,
-    UserListComponent
+    NavbarComponent,
+    FooterComponent,
+    IncompleteTodoListComponent,
+    UserListComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
