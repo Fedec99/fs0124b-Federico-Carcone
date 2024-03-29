@@ -29,10 +29,6 @@ export class IncompleteComponent implements OnInit {
     this.users = this.usersService.getAllUsers();
   }
 
-  getUserFullName(userId: number): iUser | undefined {
-    return this.users.find(user => user.id === userId);
-  }
-
   updateTodoStatus(todo: iTodo): void {
     this.todoService.updateTodoStatus(todo.id, todo.completed);
   }

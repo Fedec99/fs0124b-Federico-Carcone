@@ -3,7 +3,7 @@
     <input class="mt-2" type="checkbox" [checked]="todo.completed" (change)="updateTodoStatus(todo)">
     <div>
       <h6 class="fw-bold my-1">{{ todo.todo }}</h6>
-      <small class="m-0">Caricato da: {{ getUserFullName(todo.userId) }}</small>
-    </div>
+      <small class="m-0">Caricato da: {{ users[todo.userId - 1].firstName }}</small>
+        </div>
   </div>
 </ng-container>
