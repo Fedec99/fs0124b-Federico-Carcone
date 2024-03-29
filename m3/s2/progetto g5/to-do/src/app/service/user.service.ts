@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable} from 'rxjs';
 import { iUser } from './../model/user';
 
 @Injectable({
@@ -8,7 +8,6 @@ import { iUser } from './../model/user';
 export class UsersService {
 
   private UsersArr: iUser[] = [
-    [
       {
         id:1,
         firstName:"Terry",
@@ -810,7 +809,6 @@ export class UsersService {
         title:"VP Sales"
       }
     ]
-  ]
 
   private usersSubject = new BehaviorSubject<iUser[]>(this.UsersArr);
 
