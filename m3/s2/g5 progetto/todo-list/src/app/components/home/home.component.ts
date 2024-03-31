@@ -18,11 +18,11 @@ export class HomepageComponent implements OnInit {
   constructor(private todoService: TodoService, private usersService: UsersService) { }
 
   ngOnInit(): void {
-    this.todos = this.todoService.getAllTodo();
+    this.todos = this.todoService.getAll();
     this.users = this.usersService.getAllUsers();
   }
 
-  updateTodoStatus(todo: iTodo): void {
-    this.todoService.updateTodoStatus(todo.id, todo.completed);
+  updateTodo(todo: iTodo): void {
+    this.todoService.updateTodo(todo.id, todo.completed);
   }
 }

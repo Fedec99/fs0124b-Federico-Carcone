@@ -17,11 +17,11 @@ export class CompletedComponent implements OnInit {
   constructor(private todoService: TodoService, private usersService: UsersService) { }
 
   ngOnInit(): void {
-    this.completedTodos = this.todoService.getCompletedTodos();
+    this.completedTodos = this.todoService.getCompleted();
     this.users = this.usersService.getAllUsers();
   }
 
-  updateTodoStatus(todo: iTodo): void {
-    this.todoService.updateTodoStatus(todo.id, todo.completed);
+  updateTodo(todo: iTodo): void {
+    this.todoService.updateTodo(todo.id, todo.completed);
   }
 }

@@ -14,7 +14,7 @@
       <h4>Cose da fare:</h4>
       <div *ngIf="getTodosForUser(user.id).length > 0; else noTodos" class="todos-list">
         <div *ngFor="let todo of getTodosForUser(user.id)" class="todo-item" [ngClass]="{ 'completed': todo.completed }">
-          <input class="todo-checkbox" type="checkbox" [checked]="todo.completed" (change)="updateTodoStatus(todo)">
+          <input class="todo-checkbox" type="checkbox" [checked]="todo.completed" (change)="updateTodo(todo)">
           <div class="todo-details">
             <h6 class="todo-description">{{ todo.todo }}</h6>
           </div>

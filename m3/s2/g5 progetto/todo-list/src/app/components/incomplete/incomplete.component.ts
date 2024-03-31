@@ -18,20 +18,20 @@ export class IncompleteComponent implements OnInit {
   constructor(private todoService: TodoService, private usersService: UsersService) { }
 
   ngOnInit(): void {
-    this.loadIncompleteTodos();
+    this.loadIncomplete();
     this.loadUsers();
   }
 
-  loadIncompleteTodos(): void {
-    this.incompleteTodos = this.todoService.getIncompleteTodos();
+  loadIncomplete(): void {
+    this.incompleteTodos = this.todoService.getIncomplete();
   }
 
   loadUsers(): void {
     this.users = this.usersService.getAllUsers();
   }
 
-  updateTodoStatus(todo: iTodo): void {
-    this.todoService.updateTodoStatus(todo.id, todo.completed);
+  updateTodo(todo: iTodo): void {
+    this.todoService.updateTodo(todo.id, todo.completed);
   }
 
 }

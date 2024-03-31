@@ -913,15 +913,15 @@ export class TodoService {
 
   constructor(private usersService: UsersService) {}
 
-  getAllTodo(): iTodo[] {
+  getAll(): iTodo[] {
     return this.todoArr;
   }
 
-  getCompletedTodos(): iTodo[] {
+  getCompleted(): iTodo[] {
     return this.todoArr.filter(todo => todo.completed);
   }
 
-  getIncompleteTodos(): iTodo[] {
+  getIncomplete(): iTodo[] {
     return this.todoArr.filter(todo => !todo.completed);
   }
 
@@ -932,7 +932,7 @@ export class TodoService {
     }));
   }
 
-  updateTodoStatus(todoId: number, completed: boolean): void {
+  updateTodo(todoId: number, completed: boolean): void {
     const todoToUpdate = this.todoArr.find(todo => todo.id === todoId);
     if (todoToUpdate) {
       todoToUpdate.completed = completed;

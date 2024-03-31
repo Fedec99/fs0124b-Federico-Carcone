@@ -22,15 +22,15 @@ export class UsersComponent implements OnInit {
   }
 
   loadTodos(): void {
-    this.todos = this.todoService.getAllTodo();
+    this.todos = this.todoService.getAll();
   }
 
   loadUsers(): void {
     this.users = this.usersService.getAllUsers();
   }
 
-  updateTodoStatus(todo: iTodo): void {
-    this.todoService.updateTodoStatus(todo.id, todo.completed);
+  updateTodo(todo: iTodo): void {
+    this.todoService.updateTodo(todo.id, todo.completed);
   }
 
   getTodosForUser(userId: number): iTodo[] {
