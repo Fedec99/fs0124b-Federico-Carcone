@@ -27,6 +27,20 @@
       "name": "Luca",
       "surname": "sci",
       "id": 4
+    },
+    {
+      "email": "fedec.1411@gmail.com",
+      "password": "$2a$10$5A1cUZ8XFGpJVU0tgmNDZOmc3FfU/cR/4ltzp/dNeebWwHtsPI1Oy",
+      "name": "Federico",
+      "surname": "Carcone",
+      "id": 5
+    },
+    {
+      "email": "yuma1999@hotmail.it",
+      "password": "$2a$10$pm7tm5yTdNlIbT2bI9Oikuz0M99XofamGIFLIKhIzZwh0hAanQmVC",
+      "name": "Federico",
+      "surname": "Carcone",
+      "id": 6
     }
   ],
   "favorites": [

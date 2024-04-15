@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   login(loginForm: NgForm) {
-    // console.log(loginForm);
+     console.log(loginForm);
     try {
       this.authSrv.login(loginForm.value).subscribe();
     } catch (error) {
