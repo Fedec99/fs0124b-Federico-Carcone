@@ -1,23 +1,15 @@
 package com.GodfathersPizza;
 
+import com.GodfathersPizza.configuration.MenuConfiguration;
+import com.GodfathersPizza.configuration.OrdersConfiguration;
+import com.GodfathersPizza.model.*;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import com.GodfathersPizza.configuration.MenuConfiguration;
-import com.GodfathersPizza.configuration.OrdersConfiguration;
-import com.GodfathersPizza.model.Coperto;
-import com.GodfathersPizza.model.Menu;
-import com.GodfathersPizza.model.Ordine;
-import com.GodfathersPizza.model.PostoVuoto;
-import com.GodfathersPizza.model.Prodotto;
-import com.GodfathersPizza.model.StatoOrdine;
-import com.GodfathersPizza.model.Tavolo;
 
 
 @SpringBootApplication
