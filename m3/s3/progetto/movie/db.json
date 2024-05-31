@@ -41,6 +41,13 @@
       "name": "Federico",
       "surname": "Carcone",
       "id": 6
+    },
+    {
+      "email": "yuma1999@hotmail.com",
+      "password": "$2a$10$SITbinqX6wSriLfeBiP2SeDtoYirLQw.F/W8M8aMz4gnlw4CODQ1q",
+      "name": "federico",
+      "surname": "carcone",
+      "id": 7
     }
   ],
   "favorites": [
@@ -98,6 +105,31 @@
       "movieId": 811367,
       "userId": 2,
       "id": 23
+    },
+    {
+      "movieId": 567189,
+      "userId": 7,
+      "id": 24
+    },
+    {
+      "movieId": 804435,
+      "userId": 7,
+      "id": 25
+    },
+    {
+      "movieId": 808023,
+      "userId": 7,
+      "id": 26
+    },
+    {
+      "movieId": 726684,
+      "userId": 7,
+      "id": 27
+    },
+    {
+      "movieId": 19404,
+      "userId": 7,
+      "id": 28
     }
   ],
   "movies-popular": [
